@@ -1,0 +1,69 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --input-bg: #ffffff;
+  --border: #d1d5db;
+}
+
+[data-theme="dark"] {
+  --bg: #0b1220;
+  --card: #111827;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --accent: #38bdf8;
+  --input-bg: #020617;
+  --border: #374151;
+}
+
+body {
+  background: linear-gradient(120deg, #0ea5e9, #22c55e);
+  background-attachment: fixed;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+.flight-card {
+  background: var(--card);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
+h1 {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+label {
+  color: var(--muted);
+}
+
+.form-control,
+.form-select {
+  background: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.15rem rgba(37, 99, 235, 0.25);
+}
+
+.result-box {
+  background: rgba(37, 99, 235, 0.08);
+  border-left: 6px solid var(--accent);
+  border-radius: 14px;
+}
+
+#output {
+  color: #16a34a;
+}
